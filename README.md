@@ -1,1 +1,1 @@
-# JS-Essentials-LetsUpgrade-
+# JS-Essentials-LetsUpgrade
