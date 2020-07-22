@@ -15,27 +15,20 @@ if (marks >= 90) {
   console.log(`Entered marks are ${marks} and Grade is F`);
 }
 
-// Using Switch-Case
-if (marks <= 100) {
-  let mark = marks / 10;
-  switch (mark) {
-    case 10:
-    case 9:
-      console.log(`Entered marks are ${marks} and Grade is A`);
-      break;
-    case 8:
-      console.log(`Entered marks are ${marks} and Grade is B`);
-      break;
-    case 7:
-      console.log(`Entered marks are ${marks} and Grade is C`);
-      break;
-    case 6:
-      console.log(`Entered marks are ${marks} and Grade is D`);
-      break;
-    case 5:
-      console.log(`Entered marks are ${marks} and Grade is E`);
-      break;
-    default:
-      console.log(`Entered marks are ${marks} and Grade is F`);
-  }
+//Using Ternary Operator
+
+function grade() {
+  return marks >= 90
+    ? "Entered marks are " + marks + " and Grade is A"
+    : marks >= 80 && marks < 90
+    ? "Entered marks are " + marks + " and Grade is B"
+    : marks >= 70 && marks < 80
+    ? "Entered marks are " + marks + " and Grade is C"
+    : marks >= 60 && marks < 70
+    ? "Entered marks are " + marks + " and Grade is D"
+    : marks >= 50 && marks < 60
+    ? "Entered marks are " + marks + " and Grade is E"
+    : "Entered marks are " + marks + " and Grade is F";
 }
+
+console.log(grade());
