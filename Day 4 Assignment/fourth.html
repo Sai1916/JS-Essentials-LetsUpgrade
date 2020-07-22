@@ -5,10 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <style>
+        div {
+            display: inline-block;
+        }
+
+        input {
+            margin-left: 60px;
+        }
+
+        button {
+            margin-left: 1.5em;
+        }
+
+        p {
+            margin-left: 55px;
+        }
+    </style>
 </head>
 
 <body>
-    <h2>Calculator with some Arithmetic </h2>
+    <div>
+        <h2>Calculator with some Arithmetic </h2>
+        <input type="text" id="input1">
+        <input type="text" id="input2">
+        <ul>
+            <button onclick="add()">Addition</button>
+            <button onclick="subtract()">Subtraction</button>
+            <button onclick="division()">Division</button>
+            <button onclick="multiply()">Multiplication</button>
+            <button onclick="squareRoot()">SquareRoot</button>
+            <button onclick="percentage()">Percentage</button>
+        </ul>
+        <p id="res"></p>
+    </div>
     <script src="fourth.js"></script>
 </body>
 
